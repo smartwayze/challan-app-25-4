@@ -1,0 +1,38 @@
+name: challanapp
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  tflite_flutter:
+  permission_handler:
+  path_provider: ^2.1.1
+  image:
+  image_picker: ^1.0.4
+  path: ^1.8.3
+  camera:
+  google_mlkit_commons: ^0.3.0
+
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/model/yolov8n_full_integer_quant.tflite
+    - assets/model/labels.txt
+    - assets/model/mobilenetv1.tflite
+    - assets/model/best_full_integer_quant.tflite
+    - assets/model/label.txt
